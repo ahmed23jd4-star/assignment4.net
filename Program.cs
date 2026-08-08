@@ -97,6 +97,12 @@ namespace assignment4
 
             //PrintBookInfo(pages: 100, title :"ahmed");
             #endregion
+            #region q12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line.
+            //Call it with three book titles.
+
+            //printalltitles("ahmed", "mohamed", "saif");
+            #endregion
 
         }
         //public static void PrintWelcomeMessage()
@@ -160,6 +166,15 @@ namespace assignment4
         //    Console.WriteLine($"book title is : {title} and the pages is {pages}");
         //}
 
+        #endregion
+        #region method q12
+        //public static void printalltitles (params string [] titles)
+        //{
+        //    foreach(var itemes in titles)
+        //    {
+        //        Console.WriteLine(itemes);
+        //    }
+        //}
         #endregion
     }
 }
