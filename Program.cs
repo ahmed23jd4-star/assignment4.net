@@ -1,10 +1,180 @@
-﻿namespace assignment4
+﻿using System.Drawing;
+using System.Reflection;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace assignment4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region q1
+            //Create a one-dimensional array double[] prices with the values 25.5, 40.0, 33.75. Print
+            //the second price(index 1).
+
+            //double[] prices = { 25.5, 40, 33.75 };
+            //Console.WriteLine(prices[1]);
+
+            #endregion
+            #region q2
+            //Create a 2x2 multidimensional array int[,] shelfCopies where shelf 0 has 3, 5 copies and
+            //shelf 1 has 1, 4 copies.Print the number of copies on shelf 1, slot 0.
+
+            //int [,] shelfcopies = { { 3 , 5} , {1 ,4}  } ;
+            //Console.WriteLine(shelfcopies[ 1 ,0]);
+            //foreach (var item in shelfcopies)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+            #region q3
+            //Write a method called PrintWelcomeMessage that takes no parameters and prints
+            //"Welcome to the Library!".Call it from Main.
+
+            //PrintWelcomeMessage();
+
+            #endregion
+            #region q4
+            //Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+            //"Clean Code".
+
+            //PrintBookTitle("computer science");
+            #endregion
+            #region q5
+            //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            //int pages = 400; and print pages afterward. What do you expect to see, and why?
+            //int pages = 400;
+            //addbonuspages(pages);
+            //Console.WriteLine(pages);   // 400 doesn,t change becaouse passing by value and this value type doesn,t change
+
+            #endregion
+            #region q6
+            //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+            //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to
+            //see, and why?
+            //double[] prices = { 25.5, 40.0 };
+            //applydiscount(prices);
+            //Console.WriteLine(prices[0]); // actually subtravt becouse that passing by value but the data type is refernce
+            // so paramter has the same addrese for array prices in heap
+
+            #endregion
+            #region q7
+            //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            //Call it and print pages afterward. How is the result different from question 5 ?
+            //int pages = 400;
+            //addbounspagesbyref( ref pages);
+            //Console.WriteLine(pages); //because in q 7 the paramter convert varible original varible don,t copy so here print 450 
+            #endregion
+            #region q8
+            //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+            //new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length
+            //afterward.
+            //double[] prices = { 1 ,2 };
+            //Console.WriteLine(prices.Length);// lenght 2
+            //ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length); // lenght3
+
+            #endregion
+            #region q9
+            //Write a method bool TryGetPrice(string title, out double price) that returns true and sets
+            //price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0.Call it
+            //and print the price if found
+
+            //TryGetPrice("clean code", out double price02);
+            //Console.WriteLine(price02);
+            #endregion
+            #region q10
+            //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call
+            //it once with only a title, and once passing both a title and pages.
+
+            //PrintBookInfo("ahmed");
+            //PrintBookInfo("ahmed" , 100);
+            #endregion
+            #region q11
+            //Using the PrintBookInfo method from the question above, call it by naming the
+            //parameters, passing pages before title.
+
+            //PrintBookInfo(pages: 100, title :"ahmed");
+            #endregion
+            #region q12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line.
+            //Call it with three book titles.
+
+            //printalltitles("ahmed", "mohamed", "saif");
+            #endregion
+
         }
+        //public static void PrintWelcomeMessage()
+        //{
+        //    Console.WriteLine("welcime to the library !");
+        //}
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+
+        //public static void PrintBookTitle (string title)
+        //{
+        //Console.WriteLine($"book title : {title}");
+        //}
+        #region method q 5
+        //public static void addbonuspages(int pages){
+        //    pages += 50;
+
+
+        //    }
+        #endregion
+        #region method q6
+        //public static void applydiscount(double[] prices)
+        //{
+        //    prices[0] -= 5;
+        //}
+        #endregion
+        #region method q7
+        //public static void addbounspagesbyref (ref int pages)
+        //{
+        //    pages += 50;
+        //}
+        #endregion
+        #region method q8
+        //public static void ReplaceArray(ref double[] prices)
+        //{
+        //    prices = new double [] {10 ,12.5 , 15.0 } ;
+        //}
+        #endregion
+        #region method q9
+        //public static bool TryGetPrice(string title, out double price)
+        //{
+        //    if (title.Equals("clean code"))
+        //    {
+        //        price = 25.5;
+        //        return true;
+        //    }
+        //    else
+        //        price = 0;
+        //    return false;
+        //}
+        #endregion
+        #region method q10
+        //public static void PrintBookInfo(string title, int pages = 300)  
+        //{
+        //    Console.WriteLine($"book title is : {title} and the pages is {pages}");
+        //}
+
+        #endregion
+        #region method q11
+        //public static void PrintBookInfo(string title, int pages = 300)
+        //{
+        //    Console.WriteLine($"book title is : {title} and the pages is {pages}");
+        //}
+
+        #endregion
+        #region method q12
+        //public static void printalltitles (params string [] titles)
+        //{
+        //    foreach(var itemes in titles)
+        //    {
+        //        Console.WriteLine(itemes);
+        //    }
+        //}
+        #endregion
     }
 }
