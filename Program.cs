@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment4
@@ -90,6 +91,12 @@ namespace assignment4
             //PrintBookInfo("ahmed");
             //PrintBookInfo("ahmed" , 100);
             #endregion
+            #region q11
+            //Using the PrintBookInfo method from the question above, call it by naming the
+            //parameters, passing pages before title.
+
+            //PrintBookInfo(pages: 100, title :"ahmed");
+            #endregion
 
         }
         //public static void PrintWelcomeMessage()
@@ -142,6 +149,13 @@ namespace assignment4
         #endregion
         #region method q10
         //public static void PrintBookInfo(string title, int pages = 300)  
+        //{
+        //    Console.WriteLine($"book title is : {title} and the pages is {pages}");
+        //}
+
+        #endregion
+        #region method q11
+        //public static void PrintBookInfo(string title, int pages = 300)
         //{
         //    Console.WriteLine($"book title is : {title} and the pages is {pages}");
         //}
