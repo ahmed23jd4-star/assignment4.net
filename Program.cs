@@ -33,11 +33,38 @@ namespace assignment4
             //PrintWelcomeMessage();
 
             #endregion
+            #region q4
+            //Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+            //"Clean Code".
+
+            //PrintBookTitle("computer science");
+            #endregion
+            #region q5
+            //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            //int pages = 400; and print pages afterward. What do you expect to see, and why?
+            //int pages = 400;
+            //addbonuspages(pages);
+            //Console.WriteLine(pages);   // 400 doesn,t change becaouse passing by value and this value type doesn,t change
+
+            #endregion
 
         }
         //public static void PrintWelcomeMessage()
         //{
         //    Console.WriteLine("welcime to the library !");
         //}
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+
+        //public static void PrintBookTitle (string title)
+        //{
+        //Console.WriteLine($"book title : {title}");
+        //}
+        #region method q 5
+        //public static void addbonuspages(int pages){
+        //    pages += 50;
+
+                
+        //    }
+        #endregion
     }
 }
