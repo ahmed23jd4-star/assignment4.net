@@ -54,8 +54,15 @@ namespace assignment4
             //double[] prices = { 25.5, 40.0 };
             //applydiscount(prices);
             //Console.WriteLine(prices[0]); // actually subtravt becouse that passing by value but the data type is refernce
-                                          // so paramter has the same addrese for array prices in heap
+            // so paramter has the same addrese for array prices in heap
 
+            #endregion
+            #region q7
+            //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            //Call it and print pages afterward. How is the result different from question 5 ?
+            //int pages = 400;
+            //addbounspagesbyref( ref pages);
+            //Console.WriteLine(pages); //because in q 7 the paramter convert varible original varible don,t copy so here print 450 
             #endregion
         }
         //public static void PrintWelcomeMessage()
@@ -79,6 +86,12 @@ namespace assignment4
         //public static void applydiscount(double[] prices)
         //{
         //    prices[0] -= 5;
+        //}
+        #endregion
+        #region method q7
+        //public static void addbounspagesbyref (ref int pages)
+        //{
+        //    pages += 50;
         //}
         #endregion
     }
