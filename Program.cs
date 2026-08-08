@@ -47,7 +47,16 @@ namespace assignment4
             //Console.WriteLine(pages);   // 400 doesn,t change becaouse passing by value and this value type doesn,t change
 
             #endregion
+            #region q6
+            //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+            //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to
+            //see, and why?
+            //double[] prices = { 25.5, 40.0 };
+            //applydiscount(prices);
+            //Console.WriteLine(prices[0]); // actually subtravt becouse that passing by value but the data type is refernce
+                                          // so paramter has the same addrese for array prices in heap
 
+            #endregion
         }
         //public static void PrintWelcomeMessage()
         //{
@@ -63,8 +72,14 @@ namespace assignment4
         //public static void addbonuspages(int pages){
         //    pages += 50;
 
-                
+
         //    }
+        #endregion
+        #region method q6
+        //public static void applydiscount(double[] prices)
+        //{
+        //    prices[0] -= 5;
+        //}
         #endregion
     }
 }
