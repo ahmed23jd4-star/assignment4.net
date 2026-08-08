@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment4
 {
@@ -64,6 +65,16 @@ namespace assignment4
             //addbounspagesbyref( ref pages);
             //Console.WriteLine(pages); //because in q 7 the paramter convert varible original varible don,t copy so here print 450 
             #endregion
+            #region q8
+            //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+            //new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length
+            //afterward.
+            //double[] prices = { 1 ,2 };
+            //Console.WriteLine(prices.Length);// lenght 2
+            //ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length); // lenght3
+
+            #endregion
         }
         //public static void PrintWelcomeMessage()
         //{
@@ -92,6 +103,12 @@ namespace assignment4
         //public static void addbounspagesbyref (ref int pages)
         //{
         //    pages += 50;
+        //}
+        #endregion
+        #region method q8
+        //public static void ReplaceArray(ref double[] prices)
+        //{
+        //    prices = new double [] {10 ,12.5 , 15.0 } ;
         //}
         #endregion
     }
